@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>shop_display_admin</class>
+ <widget class="QMainWindow" name="shop_display_admin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1648</width>
+    <height>1300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Image.qrc">
+    <normaloff>:/Image/Gucci_logo.webp</normaloff>:/Image/Gucci_logo.webp</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget_Image_LIst_From_Database">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>210</y>
+      <width>1390</width>
+      <height>580</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:none;
+background-color: rgb(255, 255, 255);
+
+</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>230</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>43</number>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Price</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Image</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Quantity</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Status</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Add ShoppingCart</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="on_pushButton_Menu">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>145</y>
+      <width>120</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#on_pushButton_Menu{
+	background-color: rgb(139, 139, 139);
+	border-radius:20px;
+	border: 2px solid rgba(157,150,153,0.95);
+}
+QPushButton#on_pushButton_Menu:hover{
+	border-radius:20px;	
+	background-color:rgba(102, 94, 95, 0.21);
+	border: 3px solid rgba(157,150,153,0.95);
+}</string>
+    </property>
+    <property name="text">
+     <string>MENU</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_5">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-10</y>
+      <width>271</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>260</width>
+       <height>95</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="logoShop">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>80</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/Image/Gucci_logo.webp);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>95</x>
+        <y>17</y>
+        <width>145</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>27</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-left: 5px solid rgb(149, 149, 149);
+padding-left:1px;</string>
+      </property>
+      <property name="text">
+       <string>GUCCI</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>220</y>
+      <width>0</width>
+      <height>310</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <widget class="QToolBox" name="toolBox">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Danh mục&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Danh mục&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolBox::tab {
+    background: rgba(157,150,153,0.86);
+    border-radius: 10px;
+    color: black;
+font-size: 18px;
+ text-align: center; 
+}
+
+QToolBox::tab:selected { /* italicize selected tabs */
+    font: italic;
+    color: white;
+ text-align: center; 
+}</string>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="page_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>16</width>
+          <height>166</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>All</string>
+        </attribute>
+        <widget class="QPushButton" name="pushButton_Display_From_Database">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>70</y>
+           <width>100</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_Display_From_Database{
+	background-color:rgba(157,150,153,0.86);
+	border-radius:20px;
+}
+QPushButton#pushButton_Display_From_Database:hover{
+	
+	background-color:rgba(157,150,153,0.86);
+	border: 3px solid rgba(157,150,153,0.95);
+}
+QPushButton#pushButton_Display_From_Database:pressed{
+	padding-bottom:5px;
+	background-color:rgba(157,150,153,0.86);
+	border: 3px solid rgba(157,150,153,0.95);
+}</string>
+         </property>
+         <property name="text">
+          <string>Products</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>16</width>
+          <height>166</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <attribute name="label">
+         <string>Top</string>
+        </attribute>
+        <widget class="QPushButton" name="on_btn_show_Jacket">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>70</y>
+           <width>100</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#on_btn_show_Jacket{
+	background-color:rgba(157,150,153,0.86);
+	border-radius:20px;
+}
+QPushButton#on_btn_show_Jacket:hover{
+	
+	background-color:rgba(102, 94, 95, 0.21);
+	border: 3px solid rgba(157,150,153,0.95);
+}
+QPushButton#on_btn_show_Jacket:pressed{
+	padding-bottom:5px;
+	background-color: rgb(117, 117, 117);
+	border: 3px solid rgba(157,150,153,0.95);
+}</string>
+         </property>
+         <property name="text">
+          <string>Jacket</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="on_btn_show_Polo">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>130</y>
+           <width>100</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#on_btn_show_Polo{
+	background-color:rgba(157,150,153,0.86);
+	border-radius:20px;
+}
+QPushButton#on_btn_show_Polo:hover{
+	
+	background-color:rgba(102, 94, 95, 0.21);
+	border: 3px solid rgba(157,150,153,0.95);
+}
+QPushButton#on_btn_show_Polo:pressed{
+	padding-bottom:5px;
+	background-color: rgb(117, 117, 117);
+	border: 3px solid rgba(157,150,153,0.95);
+}</string>
+         </property>
+         <property name="text">
+          <string>Polo</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="on_btn_show_Tshirt">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>10</y>
+           <width>100</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#on_btn_show_Tshirt{
+	background-color:rgba(157,150,153,0.86);
+	border-radius:20px;
+}
+QPushButton#on_btn_show_Tshirt:hover{
+	
+	background-color:rgba(102, 94, 95, 0.21);
+	border: 3px solid rgba(157,150,153,0.95);
+}
+QPushButton#on_btn_show_Tshirt:pressed{
+	padding-bottom:5px;
+	background-color: rgb(117, 117, 117);
+	border: 3px solid rgba(157,150,153,0.95);
+}</string>
+         </property>
+         <property name="text">
+          <string>T-shirt</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>16</width>
+          <height>166</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>Bot</string>
+        </attribute>
+        <widget class="QPushButton" name="on_btn_show_Short">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>100</y>
+           <width>100</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#on_btn_show_Short{
+	background-color:rgba(157,150,153,0.86);
+	border-radius:20px;
+}
+QPushButton#on_btn_show_Short:hover{
+	
+	background-color:rgba(102, 94, 95, 0.21);
+	border: 3px solid rgba(157,150,153,0.95);
+}
+QPushButton#on_btn_show_Short:pressed{
+	padding-bottom:5px;
+	background-color: rgb(117, 117, 117);
+	border: 3px solid rgba(157,150,153,0.95);
+}</string>
+         </property>
+         <property name="text">
+          <string>Short</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="on_btn_show_Pant">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>100</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#on_btn_show_Pant{
+	background-color:rgba(157,150,153,0.86);
+	border-radius:20px;
+}
+QPushButton#on_btn_show_Pant:hover{
+	
+	background-color:rgba(102, 94, 95, 0.21);
+	border: 3px solid rgba(157,150,153,0.95);
+}
+QPushButton#on_btn_show_Pant:pressed{
+	padding-bottom:5px;
+	background-color: rgb(117, 117, 117);
+	border: 3px solid rgba(157,150,153,0.95);
+}</string>
+         </property>
+         <property name="text">
+          <string>Pant</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="frame_6">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>0</y>
+      <width>1300</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>90</y>
+       <width>781</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLineEdit" name="searchInput">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>6</y>
+        <width>581</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(230, 230, 230);
+border-radius:20px;
+border: 2px solid rgb(74, 74, 74);
+background-position: center left;
+padding-left:15px;
+</string>
+      </property>
+      <property name="placeholderText">
+       <string>Search</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="on_pushButton_Search">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>10</y>
+        <width>40</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:20px;
+border: 2px solid rgba(157,150,153,0.95);
+border-image: url(:/Image/search_icon.jpg);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1301</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgba(102, 94, 95, 0.21);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>1190</x>
+       <y>80</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(139, 139, 139);
+border-radius:5px;
+border: none;
+border-image: url(:/Image/User_icon2.jpg);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>1180</x>
+       <y>150</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:20px;
+border: 2px solid rgba(157,150,153,0.95);</string>
+     </property>
+     <property name="text">
+      <string>Log out</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_cart">
+     <property name="geometry">
+      <rect>
+       <x>1110</x>
+       <y>80</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/Image/Bag_icon.jpg);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Image.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>pushButton_3</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1519</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1516</x>
+     <y>153</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

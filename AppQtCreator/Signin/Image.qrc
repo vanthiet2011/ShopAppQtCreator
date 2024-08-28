@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Image/close_window.png</file>
+        <file>Image/Gucci_logo.webp</file>
+        <file>Image/Gucci_register.jpg</file>
+        <file>Image/Gucci_signin.jfif</file>
+        <file>Image/hidden.png</file>
+        <file>Image/minimize.png</file>
+        <file>Image/show.png</file>
+        <file>Image/switch_off.png</file>
+        <file>Image/switch_on.png</file>
+        <file>Image/Cart_icon.jpg</file>
+        <file>Image/search_icon.jpg</file>
+        <file>Image/User_icon.jpg</file>
+        <file>Image/User_icon2.jpg</file>
+        <file>Image/Bag_icon.jpg</file>
+    </qresource>
+</RCC>
